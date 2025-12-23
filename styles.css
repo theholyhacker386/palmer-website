@@ -847,6 +847,10 @@ a:hover {
         display: none;
     }
 
+    .container {
+        padding: 0 1rem;
+    }
+
     .header-content {
         flex-wrap: wrap;
     }
@@ -878,7 +882,9 @@ a:hover {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        white-space: normal;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
