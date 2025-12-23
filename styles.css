@@ -260,17 +260,58 @@ a:hover {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
-/* Quick Offer Form */
+/* Hero Two Column Layout */
+.hero-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Hero Benefits - Left Side */
+.hero-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-bullets li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-bullets li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Quick Offer Form - Right Side */
 .quick-offer-form {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 15px;
-    margin-top: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -747,6 +788,15 @@ a:hover {
         font-size: 1.2rem;
     }
 
+    .hero-two-column {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-bullets li {
+        font-size: 1.5rem;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -804,6 +854,15 @@ a:hover {
 
     .hero-subtitle {
         font-size: 1.1rem;
+    }
+
+    .hero-bullets li {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-bullets li:before {
+        font-size: 1.5rem;
     }
 
     .hero-buttons {
