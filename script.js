@@ -190,41 +190,8 @@ if (document.querySelector('.testimonials-carousel')) {
 // ============================================
 // QUICK OFFER FORM - HERO SECTION
 // ============================================
-const quickOfferForm = document.getElementById('quickOfferForm');
-const quickOfferPopup = document.getElementById('quickOfferPopup');
-
-if (quickOfferForm) {
-    quickOfferForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Show popup immediately
-        quickOfferPopup.style.display = 'flex';
-
-        // Submit form in background
-        const formData = new FormData(quickOfferForm);
-        fetch(quickOfferForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).catch(error => {
-            console.log('Form submitted');
-        });
-
-        // Close popup after 4 seconds
-        setTimeout(() => {
-            quickOfferPopup.style.display = 'none';
-            quickOfferForm.reset();
-        }, 4000);
-
-        // Also allow clicking anywhere to close popup
-        quickOfferPopup.addEventListener('click', function() {
-            quickOfferPopup.style.display = 'none';
-            quickOfferForm.reset();
-        });
-    });
-}
+// Form submits naturally to FormSubmit - no JavaScript interference needed
+// The popup feature is disabled to ensure form submissions work properly
 
 // ============================================
 // FORM VALIDATION
