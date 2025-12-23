@@ -626,11 +626,11 @@ a:hover {
 }
 
 .carousel-btn.prev {
-    left: -25px;
+    left: -70px;
 }
 
 .carousel-btn.next {
-    right: -25px;
+    right: -70px;
 }
 
 .carousel-dots {
