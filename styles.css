@@ -578,8 +578,8 @@ a:hover {
     position: relative;
     max-width: 400px;
     margin: 0 auto;
-    padding: 2rem 0;
-    overflow: hidden;
+    padding: 2rem 80px;
+    overflow: visible;
 }
 
 .carousel-container {
@@ -861,6 +861,11 @@ a:hover {
 @media (max-width: 768px) {
     .carousel-btn {
         display: none;
+    }
+
+    .testimonials-carousel {
+        padding: 2rem 0;
+        overflow: hidden;
     }
 
     .container {
