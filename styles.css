@@ -875,9 +875,9 @@ a:hover {
     }
 
     .logo h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         line-height: 1.1;
-        letter-spacing: -0.5px;
+        word-spacing: -2px;
     }
 
     .mobile-menu-toggle {
