@@ -164,7 +164,7 @@ class TestimonialsCarousel {
         });
 
         const handleSwipe = () => {
-            const swipeThreshold = 50;
+            const swipeThreshold = 25;
             const diff = touchStartX - touchEndX;
 
             if (Math.abs(diff) > swipeThreshold) {
