@@ -843,6 +843,10 @@ a:hover {
 
 /* Mobile Devices */
 @media (max-width: 768px) {
+    .carousel-btn {
+        display: none;
+    }
+
     .header-content {
         flex-wrap: wrap;
     }
