@@ -520,25 +520,29 @@ a:hover {
 }
 
 .life-situations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem 2rem;
     margin-bottom: 2rem;
+    padding-left: 2rem;
+    list-style: none;
 }
 
-.life-situations span {
+.life-situations li {
     color: var(--text-dark);
     font-size: 1rem;
     font-weight: 600;
     position: relative;
+    padding-left: 1.5rem;
 }
 
-.life-situations span:not(:last-child)::after {
+.life-situations li::before {
     content: "•";
     position: absolute;
-    right: -1.2rem;
+    left: 0;
     color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 .benefits-description p {
@@ -893,6 +897,15 @@ a:hover {
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    .life-situations {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    .benefits-title {
+        font-size: 1.5rem;
     }
 
     .quick-offer-form {
