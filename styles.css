@@ -322,6 +322,13 @@ a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.quick-offer-form * {
+    pointer-events: auto;
 }
 
 .quick-offer-title {
