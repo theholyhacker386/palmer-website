@@ -196,36 +196,8 @@ if (document.querySelector('.testimonials-carousel')) {
 // ============================================
 // FORM VALIDATION
 // ============================================
-const contactForm = document.querySelector('.contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Basic validation is handled by HTML5 required attributes
-        // This is just for additional UX feedback
-
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const message = document.getElementById('message').value.trim();
-
-        if (!name || !email || !phone || !message) {
-            e.preventDefault();
-            alert('Please fill in all required fields.');
-            return false;
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            e.preventDefault();
-            alert('Please enter a valid email address.');
-            return false;
-        }
-
-        // Form will submit to FormSubmit.co
-        // No need to prevent default if validation passes
-    });
-}
+// Forms use Web3Forms with HTML5 required attributes
+// No additional JavaScript validation needed
 
 // ============================================
 // SCROLL ANIMATIONS
