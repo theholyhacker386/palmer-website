@@ -262,6 +262,107 @@ a:hover {
     justify-content: center;
 }
 
+/* Quick Offer Form */
+.quick-offer-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quick-offer-title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.hero-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-form-fields input {
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.hero-form-fields input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.btn-hero-submit {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* Quick Offer Popup */
+.quick-offer-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.popup-content {
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: popupSlideIn 0.4s ease;
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.popup-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.popup-content p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 /* ============================================
    ABOUT SECTION
    ============================================ */
@@ -712,6 +813,27 @@ a:hover {
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    .quick-offer-form {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .quick-offer-title {
+        font-size: 1.1rem;
+    }
+
+    .popup-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .popup-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .popup-content p {
+        font-size: 1rem;
     }
 
     .section-title {

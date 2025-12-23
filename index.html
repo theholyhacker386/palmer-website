@@ -49,10 +49,38 @@
                         <a href="#contact" class="btn btn-secondary">Get Cash Offer</a>
                         <a href="tel:541-760-7408" class="btn btn-secondary">Call Now</a>
                     </div>
+
+                    <!-- Quick Cash Offer Form -->
+                    <div class="quick-offer-form">
+                        <p class="quick-offer-title">Get Your Cash Offer Now</p>
+                        <form action="https://formsubmit.co/Palmervilagi@freedomproperties23.com" method="POST" class="hero-form" id="quickOfferForm">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="Quick Cash Offer Request - Freedom Properties 23">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="text" name="_honey" style="display:none">
+
+                            <div class="hero-form-fields">
+                                <input type="text" name="property_address" placeholder="Property Address" required>
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-hero-submit">Get My Cash Offer</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Quick Offer Success Popup -->
+    <div id="quickOfferPopup" class="quick-offer-popup" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-icon">💰</div>
+            <h2>Preparing Your All Cash Offer!</h2>
+            <p>We will contact you ASAP.</p>
+        </div>
+    </div>
 
     <!-- ABOUT US SECTION -->
     <section id="about" class="about">
