@@ -68,10 +68,10 @@
                         <!-- Right Side: Quick Cash Offer Form -->
                         <div class="quick-offer-form">
                             <p class="quick-offer-title">Get Your Cash Offer Now</p>
-                            <form name="quick-offer" method="POST" data-netlify="true" class="hero-form" id="quickOfferForm">
-                                <input type="hidden" name="form-name" value="quick-offer">
-                                <input type="hidden" name="subject" value="Quick Cash Offer Request">
-                                <input type="text" name="bot-field" style="display:none">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="hero-form" id="quickOfferForm">
+                                <input type="hidden" name="access_key" value="0ec5a0cd-cc6a-4658-b598-a69a56bab37f">
+                                <input type="hidden" name="subject" value="Quick Cash Offer Request - Freedom Properties 23">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                                 <div class="hero-form-fields">
                                     <input type="text" name="name" placeholder="Name" required>
@@ -266,11 +266,10 @@
                 </div>
 
                 <div class="contact-form-container">
-                    <!-- FormSubmit.co configuration -->
-                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
-                        <input type="hidden" name="form-name" value="contact">
-                        <input type="hidden" name="subject" value="New Contact Form Submission">
-                        <input type="text" name="bot-field" style="display:none">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="0ec5a0cd-cc6a-4658-b598-a69a56bab37f">
+                        <input type="hidden" name="subject" value="New Contact Form Submission - Freedom Properties 23">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                         <input type="text" id="name" name="name" placeholder="Name" required>
                         <input type="text" id="property_address" name="property_address" placeholder="Property Address" required>
