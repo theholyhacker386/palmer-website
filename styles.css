@@ -716,6 +716,8 @@ a:hover {
 .contact-item a {
     color: var(--text-light);
     margin: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-form-container {
@@ -778,11 +780,15 @@ a:hover {
 .footer-section p {
     color: #CCCCCC;
     margin-bottom: 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .footer-section a {
     color: #CCCCCC;
     transition: color 0.3s ease;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .footer-section a:hover {
