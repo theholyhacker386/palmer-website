@@ -328,19 +328,8 @@ a:hover {
 .hero-form-fields {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 1.5rem;
-}
-
-.hero-form-fields .form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-form-fields label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
 }
 
 .hero-form-fields input {
@@ -692,19 +681,8 @@ a:hover {
     gap: 1.5rem;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
-}
-
-.form-group input,
-.form-group textarea {
+.contact-form input,
+.contact-form textarea {
     padding: 15px;
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -713,14 +691,14 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
-.form-group textarea {
+.contact-form textarea {
     resize: vertical;
     min-height: 120px;
 }
