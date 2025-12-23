@@ -40,6 +40,7 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 .container {
@@ -565,12 +566,14 @@ a:hover {
     max-width: 400px;
     margin: 0 auto;
     padding: 2rem 0;
+    overflow: hidden;
 }
 
 .carousel-container {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+    touch-action: pan-y pinch-zoom;
 }
 
 .testimonial-slide {
