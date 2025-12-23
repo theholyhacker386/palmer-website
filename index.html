@@ -68,13 +68,10 @@
                         <!-- Right Side: Quick Cash Offer Form -->
                         <div class="quick-offer-form">
                             <p class="quick-offer-title">Get Your Cash Offer Now</p>
-                            <form action="https://formsubmit.co/Palmervilagi@freedomproperties23.com" method="POST" class="hero-form" id="quickOfferForm">
-                                <!-- FormSubmit Configuration -->
-                                <input type="hidden" name="_subject" value="Quick Cash Offer Request - Freedom Properties 23">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_template" value="box">
-                                <input type="hidden" name="_next" value="https://freedomproperties23.com/#home">
-                                <input type="text" name="_honey" style="display:none">
+                            <form name="quick-offer" method="POST" data-netlify="true" class="hero-form" id="quickOfferForm">
+                                <input type="hidden" name="form-name" value="quick-offer">
+                                <input type="hidden" name="subject" value="Quick Cash Offer Request">
+                                <input type="text" name="bot-field" style="display:none">
 
                                 <div class="hero-form-fields">
                                     <input type="text" name="name" placeholder="Name" required>
@@ -270,13 +267,10 @@
 
                 <div class="contact-form-container">
                     <!-- FormSubmit.co configuration -->
-                    <form action="https://formsubmit.co/Palmervilagi@freedomproperties23.com" method="POST" class="contact-form">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="New Contact Form Submission - Freedom Properties 23">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_next" value="https://freedomproperties23.com/#contact">
-                        <input type="text" name="_honey" style="display:none">
+                    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="subject" value="New Contact Form Submission">
+                        <input type="text" name="bot-field" style="display:none">
 
                         <input type="text" id="name" name="name" placeholder="Name" required>
                         <input type="text" id="property_address" name="property_address" placeholder="Property Address" required>
