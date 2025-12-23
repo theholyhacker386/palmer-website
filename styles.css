@@ -511,10 +511,41 @@ a:hover {
     box-shadow: var(--shadow);
 }
 
+.benefits-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.life-situations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.life-situations span {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.life-situations span:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -1.2rem;
+    color: var(--primary-color);
+}
+
 .benefits-description p {
     font-size: 1.1rem;
     color: var(--text-light);
     margin: 0;
+    text-align: center;
 }
 
 /* ============================================
