@@ -102,15 +102,8 @@ class TestimonialsCarousel {
         // Set up touch/swipe for mobile
         this.setupTouchNavigation();
 
-        // Start autoplay
-        this.startAutoPlay();
-
-        // Pause autoplay on hover
-        const carousel = document.querySelector('.testimonials-carousel');
-        if (carousel) {
-            carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
-            carousel.addEventListener('mouseleave', () => this.startAutoPlay());
-        }
+        // Auto-play disabled per user request
+        // Users can manually swipe or click arrows to navigate reviews
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
