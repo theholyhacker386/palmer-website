@@ -44,7 +44,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
 
         if (target) {
-            const headerOffset = 80;
+            const headerOffset = 180;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
