@@ -152,23 +152,41 @@ class TestimonialsCarousel {
         if (!carouselContainer) return;
 
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         carouselContainer.addEventListener('touchstart', (e) => {
             touchStartX = e.changedTouches[0].screenX;
-        });
+            touchStartY = e.changedTouches[0].screenY;
+        }, { passive: false });
+
+        carouselContainer.addEventListener('touchmove', (e) => {
+            const touchCurrentX = e.changedTouches[0].screenX;
+            const touchCurrentY = e.changedTouches[0].screenY;
+            const diffX = Math.abs(touchCurrentX - touchStartX);
+            const diffY = Math.abs(touchCurrentY - touchStartY);
+
+            // If horizontal swipe is stronger than vertical, prevent page scroll
+            if (diffX > diffY) {
+                e.preventDefault();
+            }
+        }, { passive: false });
 
         carouselContainer.addEventListener('touchend', (e) => {
             touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
             this.handleSwipe();
         });
 
         const handleSwipe = () => {
             const swipeThreshold = 25;
-            const diff = touchStartX - touchEndX;
+            const diffX = touchStartX - touchEndX;
+            const diffY = Math.abs(touchStartY - touchEndY);
 
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0) {
+            // Only swipe if horizontal movement is greater than vertical
+            if (Math.abs(diffX) > swipeThreshold && Math.abs(diffX) > diffY) {
+                if (diffX > 0) {
                     // Swiped left - go to next
                     this.nextSlide();
                 } else {
