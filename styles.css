@@ -377,7 +377,7 @@ a:hover {
     display: flex;
     align-items: flex-start;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #333333 !important;
     line-height: 1.5;
 }
@@ -394,6 +394,17 @@ a:hover {
 
 .consent-checkbox span {
     flex: 1;
+}
+
+.consent-checkbox span a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.consent-checkbox span a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
 }
 
 /* Quick Offer Popup */
